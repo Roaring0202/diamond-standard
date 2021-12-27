@@ -19,13 +19,13 @@ Example: Suppose, the token price is stored on-chain everyday.
 Before every iteration, the code has to updated & deployed in the same address with no change in the storage variables.
 
 ### Iteration-1
-* Anyone can set everyday price
+* Anyone can set everyday price of a token.
 
 ### Iteration-2
-* Only Owner can set everyday price
+* Only Owner can set everyday price of a token.
 
 ### Iteration-3
-* The price for a day can be set on the same day.
+* The price of a token on a day can be set on the same day itself.
 
 E.g. The price for Jan 1st can be set on Jan 1st as per GMT timezone. 
 
