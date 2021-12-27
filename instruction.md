@@ -1,7 +1,7 @@
 # Instruction
 
 ## Objective
-* Create a `upgradable`, `pausable` __defiavgprice__ smart contract which can be used to calculate the average token price of a token.
+* Create a `upgradable`, `pausable` __tokenavgprice__ smart contract which can be used to calculate the average price of a token (with given address).
 
 Example: Suppose, the token price is stored on-chain everyday.
 
@@ -16,15 +16,17 @@ Example: Suppose, the token price is stored on-chain everyday.
 * View average token price from _Aug_ to _Sept_ out of 1 year data (_Jan_-_Dec_).
 
 ## Deployment
-Before every iteration, the code has to updated & deployed in the same address with no change in the storage variables.
+Before every iteration, the code has to updated & deployed by the 1st owner only in the same address with no change in the storage variables.
 
-### Iteration-1
+> 1st owner is the account which is used to deploy the `version-1`.
+
+### Version-1
 * Anyone can set everyday price of a token.
 
-### Iteration-2
+### Version-2
 * Only Owner can set everyday price of a token.
 
-### Iteration-3
+### Version-3
 * The price of a token on a day can be set on the same day itself.
 
 E.g. The price for Jan 1st can be set on Jan 1st as per GMT timezone. 
