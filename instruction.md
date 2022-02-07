@@ -1,14 +1,15 @@
 # Instruction
 
 ## Objective
-* Create a `upgradable`, `pausable` __tokenavgprice__ smart contract which can be used to calculate the average price of a token (with given address).
+1. Create a `upgradable`, `pausable` __tokenavgprice__ smart contract which can be used to calculate the average price of a token (with given address).
 
 Example: Suppose, the token price is stored on-chain everyday.
-
 > NOTE: 
 > 1. You can't use any loops for adding prices like `for`, `while`, etc.
 > 2. You have full freedom to decide the data structure of the contract for efficient gas consumption.
 > 3. Follow GMT timestamp as day timezone for precision.
+
+2. Implement the "Diamond standard" instead of traditional proxy pattern based upgradeability methods.
 
 ## Features
 * Set price for a day.
@@ -31,9 +32,12 @@ Before every iteration, the code has to updated & deployed by the 1st owner only
 
 E.g. The price for Jan 1st can be set on Jan 1st as per GMT timezone. 
 
+## Unit Testing
+* Write as many possible unit tests for all three version using typescript language with Hardhat
 
 ## Dependencies
-* OpenZeppelin
+* Openzeppelin
+* Diamond standard
 * Slither for finding SC vulnerabilities
 
 ## Testing framework
@@ -49,6 +53,7 @@ E.g. The price for Jan 1st can be set on Jan 1st as per GMT timezone.
 	- Ethereum
 
 ## Examine
+* Whether diamond standard is followed.
 * Efficient code in terms of gas consumption
 * Secure code: shouldn't have defi hack bugs in the contract code.
 * Production code i.e use variable names by format which is used in the production codebase.
