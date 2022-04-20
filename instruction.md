@@ -1,7 +1,7 @@
 # Instruction
 
 ## Objective
-1. Create a `upgradable`, `pausable` __tokenavgprice__ smart contract which can be used to calculate the average price of a token (with given address).
+1. Create a `upgradable`, `ownable`, `pausable` __tokenavgprice__ smart contract which can be used to calculate the average price of a token (with given address).
 
 Example: Suppose, the token price is stored on-chain everyday.
 > NOTE: 
